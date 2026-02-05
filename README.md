@@ -1,37 +1,67 @@
-# 📊 Data Insights Dashboard
+# 📊 ETL Sales | Dashboard & Analytics
 
-Dashboard interativo desenvolvido com **Streamlit** para demonstrar um pipeline completo de **ETL (Extract, Transform, Load)** aplicado a dados de vendas.
+Dashboard interativo desenvolvido com **Streamlit** no Google Colab para demonstrar
+habilidades em **ETL, análise de dados e visualização executiva**.
 
-## 🚀 Funcionalidades
-- Geração de dados simulados de e-commerce
-- Transformações e métricas de negócio
-- KPIs de faturamento e lucro
-- Gráficos interativos com Plotly
-- Filtros por região
+> Projeto criado com foco em **portfólio profissional** para áreas de  
+> Data Analytics, Data Engineering e Business Intelligence.
 
-## 🛠️ Tecnologias
+---
+
+## 🧠 Contexto do Projeto
+
+Este projeto simula um cenário real de e-commerce global, onde dados
+brutos de vendas são:
+
+1. **Extraídos** (dados simulados)
+2. **Transformados** (criação de métricas de negócio)
+3. **Carregados** para visualização interativa
+
+---
+
+## ⚙️ Pipeline de Dados (ETL)
+
+### 🔹 Extract
+- Geração de dados de vendas globais
+- Dados temporais, regionais e financeiros
+
+### 🔹 Transform
+- Cálculo de faturamento bruto
+- Cálculo de lucro líquido
+- Agregações temporais (mês)
+
+### 🔹 Load
+- KPIs executivos
+- Gráficos interativos (Plotly)
+- Filtros dinâmicos por região
+
+---
+
+## 📈 Métricas Apresentadas
+- Faturamento Total
+- Lucro Líquido
+- Total de Pedidos
+- Faturamento por Produto
+- Tendência Mensal de Lucro
+
+---
+
+## 🛠️ Tecnologias Utilizadas
 - Python
 - Streamlit
 - Pandas
 - NumPy
 - Plotly
 
-## ▶️ Como executar localmente
+---
+
+## ▶️ Execução Local
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 
-## Subir o projeto para o GitHub (via terminal)
+---
 
-Dentro da pasta do projeto, execute:
-
-```bash
-git init
-git add .
-git commit -m "Primeira versão do dashboard ETL com Streamlit"
-git branch -M main
-git remote add origin https://github.com/joaodddev/etl-sales-python.git
-git push -u origin main
-
-
+🌐 Deploy
+Aplicação publicada via Streamlit Cloud diretamente a partir do GitHub.
