@@ -57,11 +57,17 @@ brutos de vendas são:
 
 ## ▶️ Execução Local
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+    bash
+    pip install -r requirements.txt
+    streamlit run app.py
 
 ---
 
 🌐 Deploy
 Aplicação publicada via Streamlit Cloud diretamente a partir do GitHub.
+
+---
+
+👤 Autor
+Desenvolvido por João Victor
+🔗 LinkedIn(https://www.linkedin.com/in/joao-victor-macedo-neves/) 💻 Projetos focados em dados, automação, processos fiscais e eficiência operacional
