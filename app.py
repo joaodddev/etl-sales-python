@@ -1,3 +1,12 @@
+"""
+ETL Sales Dashboard
+Autor: JOÃO VICTOR
+Descrição:
+Dashboard interativo desenvolvido em Streamlit para demonstrar
+um pipeline completo de ETL (Extract, Transform, Load) aplicado
+a dados de vendas globais de e-commerce.
+"""
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -9,7 +18,7 @@ st.set_page_config(page_title="Data Insights Dashboard", layout="wide")
 
 # --- 1. ETAPA DE EXTRAÇÃO (EXTRACT) ---
 @st.cache_data
-def get_raw_data():
+def extract_sales_data():
     # Simulando um dataset de vendas global
     np.random.seed(42)
     dates = [datetime(2023, 1, 1) + timedelta(days=i) for i in range(200)]
@@ -32,7 +41,7 @@ def transform_data(df):
     return df
 
 # Executando o "Pipeline"
-raw_df = get_raw_data()
+raw_df = extract_sales_data()
 df = transform_data(raw_df)
 
 # --- 3. INTERFACE DO DASHBOARD (LOAD/VISUALIZE) ---
